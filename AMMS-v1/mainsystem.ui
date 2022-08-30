@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainSystem</class>
+ <widget class="QWidget" name="MainSystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1004</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	background: rgb(0, 0, 8);
+border-radius:10px;
+	
+	
+	
+color:white;
+	
+	font: 15pt &quot;华文细黑&quot;;
+}
+	*{background-color: rgb(6, 55, 69);}
+
+QPushButton:pressed{
+background-color:rgb(224,0,0);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}
+
+
+	
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QWidget" name="widget_5" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="5,1">
+         <item>
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(226, 226, 226);
+
+font: 12pt &quot;Agency FB&quot;;
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>2</number>
+           </property>
+           <widget class="QWidget" name="tab">
+            <attribute name="title">
+             <string>航材信息统计</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QTableView" name="tableView">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_2">
+            <attribute name="title">
+             <string>航材入库管理</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QWidget" name="widget_6" native="true">
+               <property name="styleSheet">
+                <string notr="true">
+QPushButton{
+border-radius:10px;
+border-style:inset;
+font-style:MingLiU-ExtB;
+	background-color: rgb(38, 38, 38);
+	font: 75 14pt &quot;Agency FB&quot;;
+
+}</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7" stretch="7,1">
+                <item>
+                 <widget class="QWidget" name="widget_20" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QWidget" name="widget_19" native="true">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_4">
+                      <item>
+                       <widget class="QLabel" name="label_10">
+                        <property name="font">
+                         <font>
+                          <family>Agency FB</family>
+                          <pointsize>20</pointsize>
+                          <weight>9</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 20pt &quot;Agency FB&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>航材信息：</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_7" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_2">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>20</y>
+                           <width>81</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材ID    ：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="itemID">
+                         <property name="geometry">
+                          <rect>
+                           <x>113</x>
+                           <y>10</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="placeholderText">
+                          <string>例：00000001</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_8" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_3">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>9</y>
+                           <width>81</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材名称  ：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="itemName">
+                         <property name="geometry">
+                          <rect>
+                           <x>113</x>
+                           <y>7</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="placeholderText">
+                          <string>例：轮胎</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_9" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_11">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>20</y>
+                           <width>78</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材折旧度：</string>
+                         </property>
+                        </widget>
+                        <widget class="QComboBox" name="old">
+                         <property name="geometry">
+                          <rect>
+                           <x>112</x>
+                           <y>11</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>A</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>B</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>C</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_16" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_20">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>10</y>
+                           <width>65</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材状态：</string>
+                         </property>
+                        </widget>
+                        <widget class="QComboBox" name="state">
+                         <property name="geometry">
+                          <rect>
+                           <x>112</x>
+                           <y>5</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>正常</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>外借</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>维修</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>报废</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>待报废</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_17" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_21">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>10</y>
+                           <width>81</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材寿命：</string>
+                         </property>
+                        </widget>
+                        <widget class="QComboBox" name="age">
+                         <property name="geometry">
+                          <rect>
+                           <x>112</x>
+                           <y>10</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>周转件Rotables(T)</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>可修件Repairables(R)</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>消耗件Expendables(E)</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>消耗品Consumables（C）</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>消耗件-可修理Expendables-Repairable</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>标准件Stand Parts</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_13" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_16">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>16</y>
+                           <width>91</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材来源：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="source">
+                         <property name="geometry">
+                          <rect>
+                           <x>110</x>
+                           <y>10</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_14" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_7">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>11</y>
+                           <width>83</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>航材使用时间：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="usagetime">
+                         <property name="geometry">
+                          <rect>
+                           <x>109</x>
+                           <y>4</y>
+                           <width>291</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_18" native="true">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_5" stretch="5,10,10,10,10">
+                      <item>
+                       <widget class="QLabel" name="label_9">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 20pt &quot;Agency FB&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>位置信息：（例1-7-3-5）</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_10" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_4">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>20</y>
+                           <width>79</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>仓库编号  ：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="itemStoreNum">
+                         <property name="geometry">
+                          <rect>
+                           <x>94</x>
+                           <y>12</y>
+                           <width>311</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="placeholderText">
+                          <string>1</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_11" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_5">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>20</y>
+                           <width>79</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>货架编号  ：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="itemShelfNum">
+                         <property name="geometry">
+                          <rect>
+                           <x>94</x>
+                           <y>12</y>
+                           <width>311</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="placeholderText">
+                          <string>7</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_12" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_6">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>20</y>
+                           <width>79</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>货架层号  ：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="itemFloorNum">
+                         <property name="geometry">
+                          <rect>
+                           <x>93</x>
+                           <y>14</y>
+                           <width>311</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="placeholderText">
+                          <string>3</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_15" native="true">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <widget class="QLabel" name="label_8">
+                         <property name="geometry">
+                          <rect>
+                           <x>9</x>
+                           <y>20</y>
+                           <width>78</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>托盘编号：</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="itemPalletNum">
+                         <property name="geometry">
+                          <rect>
+                           <x>93</x>
+                           <y>12</y>
+                           <width>311</width>
+                           <height>31</height>
+                          </rect>
+                         </property>
+                         <property name="placeholderText">
+                          <string>5</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="widget_21" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">
+QPushButton{
+border-radius:10px;
+border-style:inset;
+font-style:MingLiU-ExtB;
+	background-color: rgb(38, 38, 38);
+	font: 75 14pt &quot;Agency FB&quot;;
+
+}</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,4,1">
+                   <item>
+                    <widget class="QWidget" name="widget_22" native="true">
+                     <layout class="QHBoxLayout" name="horizontalLayout_8">
+                      <item>
+                       <widget class="QPushButton" name="btn_in">
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(156, 156, 156);
+font: 75 12pt &quot;Arial Narrow&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>确定</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_28" native="true"/>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_23" native="true">
+                     <layout class="QHBoxLayout" name="horizontalLayout_9">
+                      <item>
+                       <widget class="QPushButton" name="btn_back">
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(156, 156, 156);
+font: 75 12pt &quot;Arial Narrow&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>返回</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>航材信息修改</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QWidget" name="widget_24" native="true">
+               <property name="styleSheet">
+                <string notr="true">widget{background-color: rgb(255, 255, 255);
+}
+	
+
+QPushButton{
+border-radius:10px;
+border-style:inset;
+font-style:MingLiU-ExtB;
+	background-color: rgb(38, 38, 38);
+	font: 75 14pt &quot;Agency FB&quot;;
+
+}
+
+background-color: rgb(255, 255, 255);</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8" stretch="5,1,1">
+                <item>
+                 <widget class="QWidget" name="widget_25" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Agency FB&quot;;</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_12">
+                     <property name="text">
+                      <string>航材名称：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="mod_itemName">
+                     <property name="placeholderText">
+                      <string>例：轮胎</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>航材折旧度：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QComboBox" name="mod_old">
+                     <item>
+                      <property name="text">
+                       <string>A</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>B</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>C</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>航材状态：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QComboBox" name="mod_state">
+                     <item>
+                      <property name="text">
+                       <string>正常</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>外借</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>维修</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>报废</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>待报废</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_15">
+                     <property name="text">
+                      <string>航材寿命：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QComboBox" name="mod_age">
+                     <item>
+                      <property name="text">
+                       <string>周转件Rotables(T)</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>可修件Repairables(R)</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>消耗件Expendables(E)</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>消耗品Consumables（C）</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>消耗件-可修理Expendables-Repairable</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>标准件Stand Parts</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_17">
+                     <property name="text">
+                      <string>航材来源：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="mod_source"/>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="label_18">
+                     <property name="text">
+                      <string>航材使用时间：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="mod_usagetime"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="widget_27" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <widget class="QLabel" name="label_23">
+                     <property name="text">
+                      <string>仓库编号/货架编号/货架层号/托盘编号</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="site1"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="site2"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="site3"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="site4"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="widget_26" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">
+</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,3,1,1,1">
+                   <item>
+                    <widget class="QLabel" name="label_19">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>航材ID：</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="mod_ID"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="search">
+                     <property name="text">
+                      <string>检索</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="modify">
+                     <property name="text">
+                      <string>修改</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="delete_2">
+                     <property name="text">
+                      <string>删除</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,3,3">
+            <item>
+             <widget class="QWidget" name="widget_4" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="text">
+                  <string>刷新/盘点</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="text">
+                  <string>功能</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="text">
+                  <string>设置/帮助</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="return_log">
+                 <property name="text">
+                  <string>注销/退出</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="font">
+                  <font>
+                   <family>华文新魏</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>欢迎使用AMMS航材智慧仓储系统！</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCalendarWidget" name="calendarWidget">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;华文细黑&quot;;
+background-color: rgb(206, 206, 206);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QListWidget" name="listWidget">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;楷体&quot;;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
