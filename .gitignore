@@ -1,0 +1,50 @@
+# ============================================
+#  .gitignore
+#  写在这里的东西，Git 假装看不见
+#  但只对「还没被跟踪」的文件生效
+# ============================================
+
+# ---------- Qt / C++ ----------
+# Qt Creator 生成的个人环境配置，换台机器就变，不该入库
+*.pro.user
+*.pro.user.*
+
+# 编译中间产物和可执行文件
+build-*/
+debug/
+release/
+*.o
+*.obj
+*.exe
+*.dll
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile
+Makefile.*
+
+# 不是所有 Makefile 都该忽略——手写的要留着。
+# 如果你自己维护 Makefile，把上面两行删掉。
+
+# ---------- 微信小程序 ----------
+# 开发者工具的个人配置（含本机路径）
+project.private.config.json
+node_modules/
+miniprogram_npm/
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 临时文件 ----------
+*.log
+*.tmp
+*.bak
